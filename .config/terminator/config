@@ -5,7 +5,6 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_darkness = 0.66
     cursor_color = "#aaaaaa"
     scrollback_infinite = True
 [layouts]

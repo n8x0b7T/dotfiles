@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #install all the things
-apt update
-apt install git nmap htop vim tmux xrpd aircrack-ng python-pip openvpn ffmpeg gobuster terminator fish mpv wireshark bat
+sudo apt update
+sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish mpv wireshark bat
 pip3 install updog;
 
 #find all config files, make necesary folders, create sym links
@@ -21,6 +21,9 @@ create_links (){
 }
 
 export -f create_links
+
+# makes binaries executable
+chmod +x ~/.dotfiles/.local/bin/*
 
 find . -type f -not -path "./.git/*" -not -path "*.sh" -not -path "*.md" -exec bash -c 'create_links "{}"' \;
 

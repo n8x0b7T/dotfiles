@@ -1,2 +1,2 @@
 set fish_greeting
-alias cat "batcat"
+alias bat "batcat"
