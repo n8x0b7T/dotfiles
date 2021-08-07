@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# test commit
+
 #install all the things
 sudo apt update
 sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv
