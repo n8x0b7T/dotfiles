@@ -2,7 +2,7 @@
 
 #install all the things
 sudo apt update
-sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv
+sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv python3-qrcode
 wireshark bat whatweb
 pip3 install updog;
 
