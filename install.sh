@@ -2,8 +2,7 @@
 
 #install all the things
 sudo apt update
-sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv python3-qrcode ncdu bpytop ranger trash-cli httpie
-wireshark bat whatweb
+sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv python3-qrcode ncdu bpytop ranger trash-cli httpie wireshark bat whatweb autojump
 pip3 install updog;
 
 flatpak install flathub com.bitwarden.desktop com.spotify.Client com.github.micahflee.torbrowser-launcher com.parsecgaming.parsec org.chromium.Chromium org.gimp.GIMP org.signal.Signal org.videolan.VLC --user
