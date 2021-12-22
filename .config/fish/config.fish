@@ -1,6 +1,5 @@
 set fish_greeting
 alias code "flatpak run com.visualstudio.code"
-alias bat "batcat"
 alias open "xdg-open"
 alias myip "curl https://ifconfig.io"
 alias getips "ip a s | grep -v vmnet | grep -v docker | grep -v virbr | egrep -o 'inet [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | cut -d' ' -f2"
