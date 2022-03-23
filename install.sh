@@ -2,10 +2,12 @@
 
 #install all the things
 sudo apt update
-sudo apt install git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv python3-qrcode ncdu bpytop ranger trash-cli httpie wireshark bat whatweb autojump
+sudo pacman -Syu git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop ranger trash-cli httpie wireshark-qt bat
 pip3 install updog;
 
-flatpak install flathub com.bitwarden.desktop com.spotify.Client com.github.micahflee.torbrowser-launcher com.parsecgaming.parsec org.chromium.Chromium org.gimp.GIMP org.signal.Signal org.videolan.VLC --user
+flatpak install com.bitwarden.desktop com.spotify.Client com.github.micahflee.torbrowser-launcher com.parsecgaming.parsec org.chromium.Chromium org.gimp.GIMP org.signal.Signal org.videolan.VLC --user
+
+cd ~/.dotfiles
 
 #find all config files, make necesary folders, create sym links
 create_links (){
@@ -28,5 +30,11 @@ export -f create_links
 chmod +x ~/.dotfiles/.local/bin/*
 
 find . -type f -not -path "./.git/*" -not -path "*.sh" -not -path "*.md" -exec bash -c 'create_links "{}"' \;
+
+mkdir ~/.zsh_plugins
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh_plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh_plugins/zsh-syntax-highlighting
+
 
 
