@@ -27,3 +27,15 @@ set backspace=indent,eol,start	" Backspace behaviour
 set timeoutlen=200
 inoremap jj <ESC>
 
+"let g:auto_save
+
+
+function Auto_Save()
+    if exists("g:auto_save") 
+	update
+    endif
+endfunction
+
+
+autocmd TextChanged,TextChangedI * call Auto_Save()
+
