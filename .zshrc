@@ -39,10 +39,10 @@ alias changemac="sudo ip link set wlx98482790fc7d down; sudo macchanger -A wlx98
 alias copyt="xclip -sel c"
 alias pwncat=pwncat-cs
 alias copydir="pwd | copyt"
+alias f="fuck"
+eval $(thefuck --alias)
 
 ddg() {
     firefox "https://duckduckgo.com/?q=$1";
 }
-
-
 

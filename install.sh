@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #install all the things
-sudo apt update
-sudo pacman -Syu git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop ranger trash-cli httpie wireshark-qt bat
-pip3 install updog;
+sudo pacman -Syu
+sudo pacman -S git nmap htop vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop ranger trash-cli httpie wireshark-qt bat
+pip install thefuck updog;
 
 flatpak install com.bitwarden.desktop com.spotify.Client com.github.micahflee.torbrowser-launcher com.parsecgaming.parsec org.chromium.Chromium org.gimp.GIMP org.signal.Signal org.videolan.VLC --user
 
