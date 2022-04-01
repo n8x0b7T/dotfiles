@@ -13,6 +13,9 @@ SPACESHIP_CHAR_SYMBOL="$ "
 # Some plugins
 source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
+autoload -Uz compinit
+compinit
 
 # Fix save file
 SAVEHIST=1000
