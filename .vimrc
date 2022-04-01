@@ -39,3 +39,8 @@ endfunction
 
 autocmd TextChanged,TextChangedI * call Auto_Save()
 
+
+let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
+let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
+let &t_EI = "\<esc>[ q"  " default cursor (usually blinking block) otherwise
+
