@@ -1,10 +1,13 @@
-fpath=($fpath "/home/ducks/.zfunctions")
+#fpath=($fpath "/home/ducks/.zfunctions")
+source ~/.zsh_plugins/spaceship-prompt/spaceship.zsh
 
 # Set Spaceship ZSH as a prompt
 autoload -U colors && colors
 SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)
 autoload -U promptinit; promptinit
-prompt spaceship
+# prompt spaceship
+
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
@@ -18,7 +21,7 @@ autoload -Uz compinit
 compinit
 
 # Fix save file
-SAVEHIST=1000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_ALL_DUPS
 
