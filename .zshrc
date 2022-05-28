@@ -21,7 +21,7 @@ autoload -Uz compinit
 compinit
 
 # Fix save file
-SAVEHIST=10000
+SAVEHIST=3000
 HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_ALL_DUPS
 
