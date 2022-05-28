@@ -36,6 +36,7 @@ mkdir ~/.zsh_plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh_plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh_plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-completions ~/.zsh_plugins/zsh-completions
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git ~/.zsh_plugins/spaceship-prompt --depth=1
 
 
 
