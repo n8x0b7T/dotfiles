@@ -1,0 +1,5 @@
+git:
+  paging:
+    useConfig: true
+gui:
+  nerdFontsVersion: "3"
