@@ -1,17 +1,24 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.scrolloff = 4
--- vim.opt.termguicolors = true
+
+local opt = vim.opt
+
+opt.number = true
+opt.relativenumber = true
+opt.scrolloff = 4
+opt.sidescrolloff = 8
+-- opt.termguicolors = true
 
 -- tabs
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
 
 -- incremental search
--- vim.opt.hlsearch = false
--- vim.opt.incsearch = true
+-- opt.hlsearch = false
+-- opt.incsearch = true
+
+opt.confirm = true
+opt.wrap = false
 
 -- just in case
 vim.cmd('command W  write')
@@ -24,4 +31,4 @@ vim.cmd [[aunmenu PopUp.-1-]]
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "q", "<nop>")
 
-vim.opt.termguicolors = true
+opt.termguicolors = true
