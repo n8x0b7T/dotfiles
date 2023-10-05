@@ -1,7 +1,7 @@
 return {
     "SmiteshP/nvim-navic",
-    lazy = true,
-    init = function()
+    event = { 'BufReadPre', 'BufNewFile' },
+    config = function()
         vim.g.navic_silence = true
         local navic = require("nvim-navic")
 
