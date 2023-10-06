@@ -7,6 +7,8 @@ return {
                 theme = "auto",
                 globalstatus = true,
                 disabled_filetypes = { statusline = { "alpha" } },
+                section_separators = '',
+                component_separators = '',
             },
             sections = {
                 lualine_a = { "mode" },
