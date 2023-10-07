@@ -21,6 +21,7 @@ alias upgrade='paru -Syu'
 alias up='python3 -m http.server'
 alias updot='(cd ~/.dotfiles; git pull)'
 alias gradlei="echo | gradle init --type java-application --dsl kotlin --test-framework junit-jupiter"
+alias gradler="gradle build && java -cp app/build/classes/java/main"
 
 getips(){
     ip a | grep -vE "vmnet|docker|virbr|br-|127\.0\.0\.1" | awk '/inet / {print $2}' | cut -d '/' -f1
