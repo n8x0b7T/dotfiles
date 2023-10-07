@@ -1,9 +1,19 @@
 [global_config]
   extra_styling = False
+  inactive_color_offset = 0.7027027027027027
   suppress_multiple_term_dialog = True
   case_sensitive = False
 [keybindings]
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
   split_vert = <Primary><Shift>h
+  resize_up = <Shift><Alt>k
+  resize_down = <Shift><Alt>j
+  resize_left = <Shift><Alt>h
+  resize_right = <Shift><Alt>l
+  layout_launcher = ""
 [profiles]
   [[default]]
     icon_bell = False

@@ -2,10 +2,9 @@ return {
     "akinsho/bufferline.nvim",
     version = "*",
     event = "VeryLazy",
-    dependencies = { "echasnovski/mini.bufremove"},
+    dependencies = { "echasnovski/mini.bufremove" },
     keys = {
-        { "<leader>bp", "<Cmd>BufferLineTogglePin<CR>",            desc = "Toggle pin" },
-        { "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete non-pinned buffers" },
+        { "<leader>w", "<Cmd>lua require('mini.bufremove').delete()<CR>", desc = "close currrent buffer" },
     },
     opts = {
         options = {

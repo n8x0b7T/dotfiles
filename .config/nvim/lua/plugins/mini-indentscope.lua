@@ -6,7 +6,7 @@ return {
         symbol = "│",
         options = {
             try_as_border = true,
-            border = "top",
+            border = "both",
         },
     },
     init = function()
