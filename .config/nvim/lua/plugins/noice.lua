@@ -1,6 +1,15 @@
 return {
     "folke/noice.nvim",
     opts = {
+        routes = {
+            {
+                filter = {
+                    event = "msg_show",
+                    find = "nil",
+                },
+                opts = { skip = true },
+            },
+        },
         lsp = {
             signature = {
                 enabled = false
