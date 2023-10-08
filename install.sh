@@ -28,7 +28,7 @@ if [[ ! -e /usr/bin/paru ]]; then
 	rm -rf /tmp/paru-bin 2>/dev/null
 fi
 
-paru -S -a --skipreview --sudo "$sudo" --needed zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3 gnome-shell-extension-clipboard-history python-updog python-updog ungoogled-chromium-bin
+paru -S -a --skipreview --sudo "$sudo" --needed shellcheck-bin zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3 gnome-shell-extension-clipboard-history python-updog python-updog ungoogled-chromium-bin
 
 # set deafult terminal app in nautilus
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal terminator
@@ -36,7 +36,7 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal termin
 # set theme for syntax highlighting
 zsh -c "source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh; fast-theme spa"
 
-cd ~/.dotfiles
+cd ~/.dotfiles || exit
 
 # install zsh plugins
 git submodule update --init 
@@ -49,11 +49,11 @@ create_links(){
 	#location of home dir
 	homedir=~
 
-	x=$(echo $1 | cut -c 2-)
+	x=$(echo "$1" | cut -c 2-)
 
-	echo $homedir$x
-	mkdir -p $(echo $homedir$x | rev | cut -d'/' -f2- | rev)
-	ln -sfn $dotdir$x $homedir$x
+	echo $homedir"$x"
+	mkdir -p "$(echo $homedir"$x" | rev | cut -d'/' -f2- | rev)"
+	ln -sfn "$dotdir$x" "$homedir$x"
 }
 
 export -f create_links
