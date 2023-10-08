@@ -12,7 +12,7 @@ fi
 
 # install all the things
 "$sudo" pacman -Syu
-"$sudo" pacman --needed -S lsd git github-cli lazygit diff-so-fancy nmap htop ripgrep neovim vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop yt-dlp ranger\
+"$sudo" pacman --needed -S eza git github-cli lazygit diff-so-fancy nmap htop ripgrep neovim vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop yt-dlp ranger\
     trash-cli httpie wireshark-qt bat gdu tealdeer zsh zsh-syntax-highlighting zsh-autosuggestions jq opendoas spotify-launcher ttf-jetbrains-mono-nerd opendoas tree-sitter-cli fd
 pip install pwncat-cs --break-system-packages
 
