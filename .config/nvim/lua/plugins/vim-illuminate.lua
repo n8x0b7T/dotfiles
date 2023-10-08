@@ -29,8 +29,4 @@ return {
             end,
         })
     end,
-    keys = {
-        { "]]", desc = "Next Reference" },
-        { "[[", desc = "Prev Reference" },
-    },
 }

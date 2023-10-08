@@ -5,30 +5,18 @@ return {
     lazy = true,
     keys = {
         {
-            "<leader>fe",
+            "<leader>e",
             function()
                 require("neo-tree.command").execute({dir = vim.loop.cwd() })
             end,
             desc = "Explorer NeoTree (cwd)",
         },
-        { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (cwd)", remap = true },
     },
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
         "MunifTanjim/nui.nvim",
     },
-    deactivate = function()
-        vim.cmd([[Neotree close]])
-    end,
-    init = function()
-        if vim.fn.argc() == 1 then
-            local stat = vim.loop.fs_stat(vim.fn.argv(0))
-            if stat and stat.type == "directory" then
-                require("neo-tree")
-            end
-        end
-    end,
     opts = {
         close_if_last_window = true,
         sources = { "filesystem", "buffers", "git_status", "document_symbols" },
@@ -52,15 +40,4 @@ return {
             },
         },
     },
-    config = function(_, opts)
-        require("neo-tree").setup(opts)
-        vim.api.nvim_create_autocmd("TermClose", {
-            pattern = "*lazygit",
-            callback = function()
-                if package.loaded["neo-tree.sources.git_status"] then
-                    require("neo-tree.sources.git_status").refresh()
-                end
-            end,
-        })
-    end,
 }
