@@ -66,7 +66,7 @@ return {
             end)
 
             require('mason-lspconfig').setup({
-                ensure_installed = { "pylsp", "pyright", "clangd", "lua_ls", "cssls", "bashls", "hls" ,"jdtls"},
+                ensure_installed = { "pylsp", "clangd", "lua_ls", "cssls", "bashls", "hls" ,"jdtls"},
                 handlers = {
                     lsp_zero.default_setup,
                     lua_ls = function()
