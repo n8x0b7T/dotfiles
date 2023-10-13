@@ -18,3 +18,4 @@ vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buff
 vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
 
 vim.keymap.set("n", "<leader>lr", "<cmd>LspRestart<cr>")
+vim.keymap.set("n", "<leader>n", "<cmd>enew<cr>")
