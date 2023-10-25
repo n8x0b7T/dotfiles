@@ -12,7 +12,7 @@ fi
 
 # install all the things
 "$sudo" pacman -Syu
-"$sudo" pacman --needed -S eza git github-cli lazygit diff-so-fancy nmap htop ripgrep neovim vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop yt-dlp ranger\
+"$sudo" pacman --needed -S alacritty eza git github-cli lazygit diff-so-fancy nmap htop ripgrep neovim vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop yt-dlp ranger\
     trash-cli httpie wireshark-qt bat gdu tealdeer zsh zsh-syntax-highlighting zsh-autosuggestions jq opendoas spotify-launcher ttf-jetbrains-mono-nerd opendoas tree-sitter-cli fd
 pip install pwncat-cs --break-system-packages
 
@@ -60,3 +60,8 @@ export -f create_links
 
 rm -rf ~/.config/nvim 2>/dev/null
 find . -type f -not -path "./.git/*" -not -path "./.gitmodules" -not -path "./zsh_plugins/*" -not -path "*.sh" -not -path "*.md" -exec bash -c 'create_links "{}"' \;
+
+# install tmux plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+~/.tmux/plugins/tpm/bin/install_plugins
+~/.tmux/plugins/tpm/bin/clean_plugins

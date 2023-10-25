@@ -1,0 +1,19 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+shell:
+  program: /usr/bin/tmux # <- set this to the path of your tmux installation
+  args:
+    - new-session
+    - -A
+
+hide_cursor_when_typing: true
+font:
+  normal:
+    family: JetBrainsMono Nerd Font Mono
+    # style: Regular
+  size: 14.0
+
+window:
+  decorations: None
+  startup_mode: Maximized
+
