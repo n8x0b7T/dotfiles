@@ -61,7 +61,3 @@ export -f create_links
 rm -rf ~/.config/nvim 2>/dev/null
 find . -type f -not -path "./.git/*" -not -path "./.gitmodules" -not -path "./zsh_plugins/*" -not -path "*.sh" -not -path "*.md" -exec bash -c 'create_links "{}"' \;
 
-# install tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~/.tmux/plugins/tpm/bin/install_plugins
-~/.tmux/plugins/tpm/bin/clean_plugins
