@@ -5,6 +5,7 @@ export PATH=~/go/bin:/var/lib/flatpak/exports/bin:~/.local/bin:~/.ghcup/ghc/9.2.
 # Alias!
 alias sudo='doas'
 alias ls="eza --group-directories-first --time-style relative -F --git"
+alias less="less --mouse"
 alias vim="nvim"
 alias grep="grep --color"
 alias open="xdg-open"
