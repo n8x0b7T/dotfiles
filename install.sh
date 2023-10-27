@@ -29,7 +29,7 @@ if [[ ! -e /usr/bin/paru ]]; then
 	rm -rf /tmp/paru-bin 2>/dev/null
 fi
 
-paru -S -a --skipreview --sudo "$sudo" --needed shellcheck-bin zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3\
+paru -S -a --skipreview --sudo "$sudo" --needed menulibre shellcheck-bin zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3\
     gnome-shell-extension-clipboard-history gnome-shell-extension-unite python-updog python-updog ungoogled-chromium-bin
 
 # set deafult terminal app in nautilus
