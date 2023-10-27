@@ -13,7 +13,8 @@ fi
 # install all the things
 "$sudo" pacman -Syu
 "$sudo" pacman --needed -S alacritty eza git github-cli lazygit diff-so-fancy nmap htop ripgrep neovim vim tmux aircrack-ng openvpn ffmpeg terminator fish bpython mpv ncdu bpytop yt-dlp ranger\
-    trash-cli httpie wireshark-qt bat gdu tealdeer zsh zsh-syntax-highlighting zsh-autosuggestions jq opendoas spotify-launcher ttf-jetbrains-mono-nerd opendoas tree-sitter-cli fd
+    trash-cli httpie wireshark-qt bat gdu tealdeer zsh zsh-syntax-highlighting zsh-autosuggestions jq opendoas spotify-launcher ttf-jetbrains-mono-nerd opendoas tree-sitter-cli fd\
+    gnome-shell-extension-dash-to-panel
 pip install pwncat-cs --break-system-packages
 
 # configure git
@@ -28,7 +29,8 @@ if [[ ! -e /usr/bin/paru ]]; then
 	rm -rf /tmp/paru-bin 2>/dev/null
 fi
 
-paru -S -a --skipreview --sudo "$sudo" --needed shellcheck-bin zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3 gnome-shell-extension-clipboard-history python-updog python-updog ungoogled-chromium-bin
+paru -S -a --skipreview --sudo "$sudo" --needed shellcheck-bin zsh-fast-syntax-highlighting nautilus-open-any-terminal gobuster-bin freetube-bin blocky-bin autojump adw-gtk3\
+    gnome-shell-extension-clipboard-history gnome-shell-extension-unite python-updog python-updog ungoogled-chromium-bin
 
 # set deafult terminal app in nautilus
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal terminator
