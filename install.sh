@@ -63,3 +63,19 @@ export -f create_links
 rm -rf ~/.config/nvim 2>/dev/null
 find . -type f -not -path "./.git/*" -not -path "./.gitmodules" -not -path "./zsh_plugins/*" -not -path "*.sh" -not -path "*.md" -exec bash -c 'create_links "{}"' \;
 
+gsettings set org.gnome.desktop.interface icon-theme 'Pop'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>f'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'nautilus'
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>t'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'alacritty'
+
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift><Super>m']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>m']"
+gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "[]"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Super>Escape']"
+
