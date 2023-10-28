@@ -29,3 +29,5 @@ font:
 mouse:
   hide_when_typing: true
 
+window:
+  decorations_theme_variant: Dark
