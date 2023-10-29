@@ -31,3 +31,6 @@ mouse:
 
 window:
   decorations_theme_variant: Dark
+  dimensions:
+    columns: 120
+    lines: 30
