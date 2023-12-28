@@ -1,0 +1,34 @@
+import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "JetBrainsMono NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono NF"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono NF"
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+args = ["new-session", "-A", "-D", "-s", "main"]
+program = "/usr/bin/tmux"
+
+[window]
+decorations_theme_variant = "Dark"
+
+[window.dimensions]
+columns = 120
+lines = 30
