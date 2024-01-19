@@ -6,9 +6,9 @@ case $- in
       *) return;;
 esac
 
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+# PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+PS1='$ '
 
 
-. "$HOME/.cargo/env"
 
 
