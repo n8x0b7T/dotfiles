@@ -8,6 +8,7 @@ alias ls="eza --color-scale all --group-directories-first --time-style relative 
 alias less="less --mouse"
 alias vim="nvim"
 alias grep="grep --color"
+alias diff="diff --color"
 alias open="xdg-open"
 alias myip="curl https://ifconfig.io"
 alias copyt="xclip -sel c"
