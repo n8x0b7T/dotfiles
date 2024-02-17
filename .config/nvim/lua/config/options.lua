@@ -20,6 +20,8 @@ opt.expandtab = true
 opt.confirm = true
 opt.wrap = false
 
+opt.spell = true
+
 -- just in case
 vim.cmd('command W  write')
 
