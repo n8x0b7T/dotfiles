@@ -32,3 +32,9 @@ decorations_theme_variant = "Dark"
 [window.dimensions]
 columns = 120
 lines = 30
+
+[cursor.style]
+blinking = "Always"
+
+[cursor]
+blink_interval = 500
