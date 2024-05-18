@@ -48,8 +48,4 @@ bindkey "^[[H" beginning-of-line
 # Disable XON/XOFF for reverse search
 stty -ixon
 
-# Setup autojump
-[[ -s /etc/profile.d/autojump.sh ]] && zsh-defer source /etc/profile.d/autojump.sh
-
-
 export TERM=alacritty
