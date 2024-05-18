@@ -49,3 +49,5 @@ bindkey "^[[H" beginning-of-line
 stty -ixon
 
 export TERM=alacritty
+
+zsh-defer eval "$(zoxide init zsh)"
