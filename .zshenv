@@ -43,3 +43,8 @@ auto_ghidra(){
   ghidra-analyzeHeadless $tmp_path "$1" -import "$1"
   ghidra "$tmp_path/$1.gpr"
 }
+
+how() {
+  local c=$(ollama run ask-ai "$*" --think=false)
+  print -z "$c"
+}
